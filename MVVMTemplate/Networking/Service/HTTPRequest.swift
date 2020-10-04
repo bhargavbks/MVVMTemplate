@@ -18,10 +18,10 @@ struct HTTPRequest {
   // MARK: - Methods
   
   static func configure(for path: Path,
-                        queryParams parameters: QueryParameters? = nil,
-                        httpBody body: Data? = nil,
-                        method: HTTPMethod = .get) throws -> URLRequest {
-    
+                        queryParams parameters: QueryParameters?,
+                        httpBody body: Data?,
+                        method: HTTPMethod) throws -> URLRequest {
+
     let env = Environment()
     var urlComponents = URLComponents(string: "\(env.config(.baseUrl))\(path.rawValue)")
     if method == .get {
@@ -49,7 +49,6 @@ struct HTTPRequest {
     
     request.httpMethod = method.rawValue
     let appHeaders: Headers = [
-      "applicationToken": env.config(.applicationToken),
       "Content-Type": "application/json",
       "Accept": "application/json"
     ]

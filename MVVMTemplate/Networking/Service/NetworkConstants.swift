@@ -33,7 +33,8 @@ public enum AppError: Int, Error {
   case missingParameters = 1002
   case dataFormatError = 1003
   case encodingFailed = 1004
-  case unknown = 1005
+  case problemWithRequest = 1005
+  case unknown = 1006
   
   init(with error: NSError) {
     self = AppError(rawValue: error.code) ?? .unknown

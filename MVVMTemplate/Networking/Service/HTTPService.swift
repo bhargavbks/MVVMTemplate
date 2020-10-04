@@ -30,7 +30,7 @@ public class Service {
   
   // MARK: - Methods
   
-  public func requestBackend<T: Decodable> (for httpMethod: HTTPMethod,
+  public func requestBackend<T: Decodable> (for httpMethod: HTTPMethod = .get,
                                             path: Path,
                                             queryParams paramter: QueryParameters? = nil,
                                             httpBody body: Data? = nil,
@@ -49,9 +49,12 @@ public class Service {
     }
     
     guard let request = try? HTTPRequest.configure(for: path,
-                                                   httpBody: body,  method: .post) else {
-      throw AppError.missingURL
+                                                   queryParams: paramter,
+                                                   httpBody: body,
+                                                   method: httpMethod) else {
+      throw AppError.problemWithRequest
     }
+
     return urlSession.dataTask(with: request, completionHandler: {data, response, error in
       
       guard let httpResponse = response as? HTTPURLResponse,
@@ -76,5 +79,4 @@ public class Service {
   public func cancel() {
     urlSession.invalidateAndCancel()
   }
-  
 }
