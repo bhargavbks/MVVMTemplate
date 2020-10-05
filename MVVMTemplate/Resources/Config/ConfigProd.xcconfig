@@ -1,0 +1,11 @@
+//
+//  ConfigProd.xcconfig
+//  MVVMTemplate
+//
+//  Created by Bhargav BKS on 05/10/2020.
+//  Copyright © 2020 Bhargav BKS. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+APPLICATION_NAME = MVVMTemplate
