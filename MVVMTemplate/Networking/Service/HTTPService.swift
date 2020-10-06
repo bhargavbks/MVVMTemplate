@@ -11,16 +11,16 @@ import Foundation
 public typealias Success<T> = (T) -> ()
 public typealias Failure = (AppError) -> ()
 
-public class Service {
+public class HTTPService {
 
   // MARK: - Properties
   
-  private static var instance: Service! = nil
+  private static var instance: HTTPService! = nil
   
-  public static var shared: Service {
+  public static var shared: HTTPService {
     get {
       if instance == nil {
-        instance = Service()
+        instance = HTTPService()
       }
       return instance
     }
@@ -29,6 +29,8 @@ public class Service {
   private let urlSession = URLSession.shared
   
   // MARK: - Methods
+  
+  private init() {}
   
   public func requestBackend<T: Decodable> (for httpMethod: HTTPMethod = .get,
                                             path: Path,

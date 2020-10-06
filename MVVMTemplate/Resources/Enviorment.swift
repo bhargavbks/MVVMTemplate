@@ -10,7 +10,6 @@ import Foundation
 
 public enum PlistKey: String {
   case baseUrl = "BaseUrl"
-  case applicationToken = "ApplicationToken"
 }
 
 public struct Environment {
@@ -28,8 +27,6 @@ public struct Environment {
     switch key {
       case .baseUrl:
         return infoDict[PlistKey.baseUrl.rawValue] as! String
-      case .applicationToken:
-        return infoDict[PlistKey.applicationToken.rawValue] as! String
     }
   }
 }

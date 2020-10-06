@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2036777F252CE1A6004BEC8C /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036777E252CE1A6004BEC8C /* EmployeeTableViewCell.swift */; };
+		20367784252CE517004BEC8C /* HomeBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20367783252CE517004BEC8C /* HomeBusinessLogic.swift */; };
+		20367789252CE5E2004BEC8C /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20367788252CE5E2004BEC8C /* EmployeeModel.swift */; };
+		20367790252CF115004BEC8C /* EmployeeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036778F252CF115004BEC8C /* EmployeeCellViewModel.swift */; };
+		20367795252CFD7D004BEC8C /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20367794252CFD7C004BEC8C /* HomeViewModelTests.swift */; };
+		2036779D252D0F24004BEC8C /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036779C252D0F24004BEC8C /* StubResponse.swift */; };
 		20A332AC23F353CF0076CA4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A332AB23F353CF0076CA4B /* AppDelegate.swift */; };
 		20A332AE23F353CF0076CA4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A332AD23F353CF0076CA4B /* SceneDelegate.swift */; };
 		20A332B323F353CF0076CA4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A332B123F353CF0076CA4B /* Main.storyboard */; };
 		20A332B523F353DD0076CA4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A332B423F353DD0076CA4B /* Assets.xcassets */; };
 		20A332B823F353DD0076CA4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A332B623F353DD0076CA4B /* LaunchScreen.storyboard */; };
-		20A332C323F353DE0076CA4B /* MVVMTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A332C223F353DE0076CA4B /* MVVMTemplateTests.swift */; };
 		20A332CE23F353DF0076CA4B /* MVVMTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A332CD23F353DF0076CA4B /* MVVMTemplateUITests.swift */; };
 		20F1736D25291F460073B1C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1736C25291F460073B1C7 /* HomeViewController.swift */; };
 		20F1737525291FB60073B1C7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1737425291FB60073B1C7 /* HomeViewModel.swift */; };
@@ -43,6 +48,12 @@
 		20367778252BCEC0004BEC8C /* ConfigDev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigDev.xcconfig; sourceTree = "<group>"; };
 		20367779252BCED9004BEC8C /* ConfigUat.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigUat.xcconfig; sourceTree = "<group>"; };
 		2036777A252BCEEC004BEC8C /* ConfigProd.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigProd.xcconfig; sourceTree = "<group>"; };
+		2036777E252CE1A6004BEC8C /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		20367783252CE517004BEC8C /* HomeBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBusinessLogic.swift; sourceTree = "<group>"; };
+		20367788252CE5E2004BEC8C /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
+		2036778F252CF115004BEC8C /* EmployeeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCellViewModel.swift; sourceTree = "<group>"; };
+		20367794252CFD7C004BEC8C /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		2036779C252D0F24004BEC8C /* StubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
 		20A332A823F353CF0076CA4B /* MVVMTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A332AB23F353CF0076CA4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20A332AD23F353CF0076CA4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +62,6 @@
 		20A332B723F353DD0076CA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20A332B923F353DD0076CA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A332BE23F353DE0076CA4B /* MVVMTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20A332C223F353DE0076CA4B /* MVVMTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTemplateTests.swift; sourceTree = "<group>"; };
 		20A332C423F353DE0076CA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A332C923F353DE0076CA4B /* MVVMTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A332CD23F353DF0076CA4B /* MVVMTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTemplateUITests.swift; sourceTree = "<group>"; };
@@ -134,8 +144,9 @@
 		20A332C123F353DE0076CA4B /* MVVMTemplateTests */ = {
 			isa = PBXGroup;
 			children = (
-				20A332C223F353DE0076CA4B /* MVVMTemplateTests.swift */,
 				20A332C423F353DE0076CA4B /* Info.plist */,
+				20367794252CFD7C004BEC8C /* HomeViewModelTests.swift */,
+				2036779C252D0F24004BEC8C /* StubResponse.swift */,
 			);
 			path = MVVMTemplateTests;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				20F1737425291FB60073B1C7 /* HomeViewModel.swift */,
+				2036778F252CF115004BEC8C /* EmployeeCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -175,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				20F1736C25291F460073B1C7 /* HomeViewController.swift */,
+				2036777E252CE1A6004BEC8C /* EmployeeTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +195,7 @@
 		20F1736925291DDE0073B1C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				20367788252CE5E2004BEC8C /* EmployeeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +221,7 @@
 		20F1737925291FDF0073B1C7 /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				20367783252CE517004BEC8C /* HomeBusinessLogic.swift */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -355,10 +370,14 @@
 				20A332AC23F353CF0076CA4B /* AppDelegate.swift in Sources */,
 				20A332AE23F353CF0076CA4B /* SceneDelegate.swift in Sources */,
 				20F1738E252921730073B1C7 /* Enviorment.swift in Sources */,
+				20367784252CE517004BEC8C /* HomeBusinessLogic.swift in Sources */,
 				20F1737C252920110073B1C7 /* NetworkConstants.swift in Sources */,
 				20F17384252920270073B1C7 /* HTTPService.swift in Sources */,
+				2036777F252CE1A6004BEC8C /* EmployeeTableViewCell.swift in Sources */,
 				20F17389252920380073B1C7 /* HTTPRequest.swift in Sources */,
 				20F1736D25291F460073B1C7 /* HomeViewController.swift in Sources */,
+				20367789252CE5E2004BEC8C /* EmployeeModel.swift in Sources */,
+				20367790252CF115004BEC8C /* EmployeeCellViewModel.swift in Sources */,
 				20F1737525291FB60073B1C7 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A332C323F353DE0076CA4B /* MVVMTemplateTests.swift in Sources */,
+				2036779D252D0F24004BEC8C /* StubResponse.swift in Sources */,
+				20367795252CFD7D004BEC8C /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

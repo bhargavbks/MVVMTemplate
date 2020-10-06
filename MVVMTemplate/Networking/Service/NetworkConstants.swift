@@ -16,6 +16,7 @@ public enum HTTPMethod: String {
 
 public enum Path: String {
   case login = "login"
+  case employees = "employees"
 }
 
 public enum AppError: Int, Error {
