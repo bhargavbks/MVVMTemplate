@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
   
-  // MARK:- Properties
+  // MARK:- PROPERTIES
 
   private let viewModel = HomeViewModel()
   
@@ -20,15 +20,21 @@ class HomeViewController: UIViewController {
     static let errorMessage: String = "Unable to create employee cell"
   }
 
-  // MARK:- IBOutlets
+  // MARK:- IBOUTLETS
   
   @IBOutlet weak var employeesTableView: UITableView! {
     didSet {
       employeesTableView.dataSource = self
     }
   }
+  
+  // MARK:- IBACTION
+  
+  @IBAction func addEmployee(_ sender: UIBarButtonItem) {
+    print("clicked")
+  }
 
-  // MARK:- View life cycle
+  // MARK:- VIEW LIFE CYCLE
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,14 +48,16 @@ class HomeViewController: UIViewController {
 
   // MARK: - Navigation
 
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      // Get the new view controller using segue.destination.
-      // Pass the selected object to the new view controller.
-  }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {}
+
 }
 
+// MARK:- EXTENSIONS
+
 extension HomeViewController: UITableViewDataSource {
+  
+  // MARK:- TABLE DATA SOURCE
+
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return viewModel.numberOfRows()
   }
@@ -65,6 +73,9 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 extension HomeViewController: HomeViewModelDelegate {
+
+  // MARK:- HOME VIEW MODEL DELEGATE
+
   func reloadTableView() {
     self.employeesTableView.reloadData()
   }

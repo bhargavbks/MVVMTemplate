@@ -25,6 +25,9 @@
 		20F17384252920270073B1C7 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F17383252920270073B1C7 /* HTTPService.swift */; };
 		20F17389252920380073B1C7 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F17388252920380073B1C7 /* HTTPRequest.swift */; };
 		20F1738E252921730073B1C7 /* Enviorment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1738D252921730073B1C7 /* Enviorment.swift */; };
+		20FD13CA252E781B0080C4F7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD13C9252E781B0080C4F7 /* BaseViewController.swift */; };
+		20FD13D2252E7ED60080C4F7 /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD13D1252E7ED60080C4F7 /* AddEmployeeViewController.swift */; };
+		20FD13D7252E7EF40080C4F7 /* AddEmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD13D6252E7EF40080C4F7 /* AddEmployeeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		20F17383252920270073B1C7 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		20F17388252920380073B1C7 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		20F1738D252921730073B1C7 /* Enviorment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviorment.swift; sourceTree = "<group>"; };
+		20FD13C9252E781B0080C4F7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		20FD13D1252E7ED60080C4F7 /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
+		20FD13D6252E7EF40080C4F7 /* AddEmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,7 @@
 			children = (
 				20F1737425291FB60073B1C7 /* HomeViewModel.swift */,
 				2036778F252CF115004BEC8C /* EmployeeCellViewModel.swift */,
+				20FD13D6252E7EF40080C4F7 /* AddEmployeeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +195,8 @@
 			children = (
 				20F1736C25291F460073B1C7 /* HomeViewController.swift */,
 				2036777E252CE1A6004BEC8C /* EmployeeTableViewCell.swift */,
+				20FD13C9252E781B0080C4F7 /* BaseViewController.swift */,
+				20FD13D1252E7ED60080C4F7 /* AddEmployeeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FD13CA252E781B0080C4F7 /* BaseViewController.swift in Sources */,
 				20A332AC23F353CF0076CA4B /* AppDelegate.swift in Sources */,
 				20A332AE23F353CF0076CA4B /* SceneDelegate.swift in Sources */,
 				20F1738E252921730073B1C7 /* Enviorment.swift in Sources */,
@@ -374,6 +384,8 @@
 				20F1737C252920110073B1C7 /* NetworkConstants.swift in Sources */,
 				20F17384252920270073B1C7 /* HTTPService.swift in Sources */,
 				2036777F252CE1A6004BEC8C /* EmployeeTableViewCell.swift in Sources */,
+				20FD13D7252E7EF40080C4F7 /* AddEmployeeViewModel.swift in Sources */,
+				20FD13D2252E7ED60080C4F7 /* AddEmployeeViewController.swift in Sources */,
 				20F17389252920380073B1C7 /* HTTPRequest.swift in Sources */,
 				20F1736D25291F460073B1C7 /* HomeViewController.swift in Sources */,
 				20367789252CE5E2004BEC8C /* EmployeeModel.swift in Sources */,
